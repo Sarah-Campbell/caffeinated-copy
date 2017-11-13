@@ -1,3 +1,11 @@
 .btn-outline-secondary {
-  @include button-outline-variant(#868e96, #868e96);
+  @include button-outline-variant(#868e96, white);
+}
+
+.btn-secondary {
+  @include button-variant(white, $gray-600, $gray-600);
+}
+
+.btn-dark {
+  @include button-variant(white, $gray-800, $gray-800);
 }

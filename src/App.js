@@ -24,7 +24,7 @@ class App extends Component {
                             <NavItem href="#">About Me</NavItem>
                         </Nav>
                         <Nav pullRight>
-                            <Button bsSize="small" className="btn-outline-secondary">Let’s grab a coffee</Button>
+                            <Button bsSize="small" className="btn-dark cta">Let’s grab a coffee</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

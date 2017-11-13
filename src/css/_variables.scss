@@ -1,4 +1,6 @@
 // Colors
+$gray-600: #868e96 !default;
+$gray-800: #343a40 !default;
 
 // Scaffolding
 $text-color: #111;
@@ -9,14 +11,6 @@ $font-family-base: 'Open Sans', sans-serif;
 $headings-font-family: 'Oswald', sans-serif;
 $headings-font-weight: 300;
 
-// Scale - Perfect Fifth
-//$font-size-h1: 5.063em;
-//$font-size-h2: 3.375em;
-//$font-size-h3: 2.25em;
-//$font-size-h4: 1.5em;
-//$font-size-h5: 1em;
-//$line-height-base: 1.45;
-
 // Scale - Perfect Fourth
 $font-size-h1: 3.157em;
 $font-size-h2: 2.369em;
@@ -24,3 +18,32 @@ $font-size-h3: 1.777em;
 $font-size-h4: 1.333em;
 $font-size-h5: 1em;
 $line-height-base: 1.45;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: (
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3)
+) !default;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
