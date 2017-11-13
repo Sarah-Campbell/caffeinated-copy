@@ -1,0 +1,28 @@
+@import 'bootstrap-custom';
+
+body {
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+section:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.container {
+  position: relative;
+}
+
+.splash-container {
+  background: no-repeat center center;
+  background-image: url(../img/wall.jpg);
+  background-size: cover;
+
+  .splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    min-height: 60vh;
+  }
+}

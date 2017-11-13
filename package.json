@@ -2,17 +2,26 @@
   "name": "caffeinated-copy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Sarah-Campbell.github.io",
   "dependencies": {
     "react": "^16.1.0",
-    "react-dom": "^16.1.0"
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.1.0",
+    "react-fontawesome": "^1.6.1",
+    "react-scroll-to-component": "^1.0.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
