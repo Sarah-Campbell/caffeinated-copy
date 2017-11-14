@@ -12,8 +12,10 @@ import k5 from "./img/k/5.png"
 import fr from "./img/f/fr.jpg"
 import f1 from "./img/f/1.png"
 import f2 from "./img/f/2.png"
-import f3 from "./img/f/3.png"
-import f4 from "./img/f/4.png"
+import kindle from "./img/kindle.jpg"
+import kotex from "./img/kotex.jpg"
+import mec from "./img/mec.jpg"
+import tic from "./img/tic-tacs.jpg"
 
 class App extends Component {
     render() {
@@ -30,11 +32,9 @@ class App extends Component {
                     </Navbar.Header>
                     <Navbar.Collapse>
                         <Nav>
-                            <NavItem href="#" onClick={() => scrollToComponent(this.work, {
-                                align: 'top'
-                            })}>My Work</NavItem>
+                            <NavItem href="#" onClick={() => scrollToComponent(this.work)}>My Work</NavItem>
                             <NavItem href="#" onClick={() => scrollToComponent(this.process)}>My Process</NavItem>
-                            <NavItem href="#">About Me</NavItem>
+                            <NavItem href="#" onClick={() => scrollToComponent(this.about)}>About Me</NavItem>
                         </Nav>
                         <Nav pullRight>
                             <Button bsSize="small" className="btn-dark cta">Let’s grab a coffee</Button>
@@ -66,7 +66,7 @@ class App extends Component {
                     <Grid ref={work => this.work = work}>
                         <Row className="mb-5">
                             <Col sm={12}>
-                                <h3>My Work</h3>
+                                <h2>My Work</h2>
                                 <p>
                                     I understand the importance and hard work that goes into creating an authentic
                                     brand. Check out a few of the brands below which have trusted me with developing and
@@ -98,7 +98,11 @@ class App extends Component {
                                 <Image src={k5} responsive/>
                             </Col>
                         </Row>
+                    </Grid>
+                </section>
 
+                <section>
+                    <Grid>
                         <Row className="mb-5">
                             <Col sm={4}>
                                 <Image src={fr} responsive/>
@@ -110,15 +114,6 @@ class App extends Component {
                                 <Image src={f2} responsive/>
                             </Col>
                         </Row>
-
-                        <Row className="mb-5">
-                            <Col sm={4}>
-                                <Image src={f3} responsive/>
-                            </Col>
-                            <Col sm={4}>
-                                <Image src={f4} responsive/>
-                            </Col>
-                        </Row>
                     </Grid>
                 </section>
 
@@ -126,12 +121,72 @@ class App extends Component {
                     <Grid ref={process => this.process = process}>
                         <Row className="mb-5">
                             <Col sm={12}>
-                                <h3>My Process</h3>
+                                <h2>My Process</h2>
                                 <p>
                                     Practice makes perfect! (And the perfect conversation starter.) I know how important
                                     demonstrating innovation and a clear strategic thought process can be. Check out my
                                     mock creative concepts and strategies below to see my thoughts and ideas for a
                                     variety of brands for both on and offline mediums.
+                                </p>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col sm={3}>
+                                <Image src={kindle} responsive/>
+                                <h4>Kindle</h4>
+                                <p>
+                                    A friendly, bookish brand sparking passion and accessibility “for the love of
+                                    reading”.
+                                </p>
+                            </Col>
+                            <Col sm={3}>
+                                <Image src={kotex} responsive/>
+                                <h4>U by Kotex</h4>
+                                <p>
+                                    A spunky, bold and colourful brand that tells it like it is.
+                                </p>
+                            </Col>
+                            <Col sm={3}>
+                                <Image src={mec} responsive/>
+                                <h4>MEC</h4>
+                                <p>
+                                    A nature loving brand inspiring and leading its city dwelling members outdoors.
+                                </p>
+                            </Col>
+                            <Col sm={3}>
+                                <Image src={tic} responsive/>
+                                <h4>Tic Tacs</h4>
+                                <p>
+                                    A playful, optimistic and engaging brand that creates little moments of fun.
+                                </p>
+                            </Col>
+                        </Row>
+                    </Grid>
+                </section>
+
+                <section>
+                    <Grid>
+                        <Row ref={about => this.about = about}>
+                            <Col sm={12}>
+                                <h2>About Me</h2>
+
+                                <p>
+                                    I am an insatiable coffee drinker and travel lover who has fallen in love with the
+                                    process of coming up with ideas. Writing, developing, and creating are my life while
+                                    extreme organization is just my fun quirk.
+                                </p>
+
+                                <p>
+                                    I have 2 years of marketing and content development experience. Since graduating
+                                    with
+                                    my Communications and English degree from Simon Fraser University I have worked as a
+                                    freelance copywriter on a variety of brands, and with various agencies on market
+                                    strategy and media planning.
+                                </p>
+
+                                <p>
+                                    Let’s grab a coffee and discuss how I can help bring your brand’s voice to life!
                                 </p>
                             </Col>
                         </Row>
