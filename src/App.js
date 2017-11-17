@@ -18,6 +18,7 @@ import kotex from "./img/kotex.jpg"
 import mec from "./img/mec.jpg"
 import tic from "./img/tic-tacs.jpg"
 import sarah from "./img/coffee-drinker.jpg"
+import bb from "./img/bb.jpg"
 
 const LINKEDIN = 'https://ca.linkedin.com/in/sarah-campbell-b9895081';
 const EMAIL = 'sarahj.campb@gmail.com';
@@ -40,7 +41,8 @@ class App extends Component {
                             <NavItem href="#" onClick={() => scrollToComponent(this.work, {align: 'top', offset: -30})}>
                                 My Work
                             </NavItem>
-                            <NavItem href="#" onClick={() => scrollToComponent(this.process, {align: 'top', offset: -30})}>
+                            <NavItem href="#"
+                                     onClick={() => scrollToComponent(this.process, {align: 'top', offset: -30})}>
                                 My Process
                             </NavItem>
                             <NavItem href="#" onClick={() => scrollToComponent(this.about)}>
@@ -56,13 +58,13 @@ class App extends Component {
                     </Navbar.Collapse>
                 </Navbar>
 
-                <section className="splash-container mb-5" ref={top => this.top = top}>
+                <section className="splash-container" ref={top => this.top = top}>
                     <Grid>
                         <Image src={facial} responsive/>
                     </Grid>
                 </section>
 
-                <section className="mb-5 pb-5">
+                <section className="my-5">
                     <Grid>
                         <Row>
                             <Col sm={12}>
@@ -76,8 +78,8 @@ class App extends Component {
                     </Grid>
                 </section>
 
-                <section className="py-5" style={{backgroundColor: "#EAEBE3"}}>
-                    <Grid ref={work => this.work = work}>
+                <section className="bg-light-steel-blue mt-5 mb-2" ref={work => this.work = work}>
+                    <Grid className="py-5">
                         <Row>
                             <Col sm={12}>
                                 <h2>My Work</h2>
@@ -115,8 +117,8 @@ class App extends Component {
                     </Grid>
                 </section>
 
-                <section className="py-5" style={{backgroundColor: "#B6B8AD"}}>
-                    <Grid className="mb-5">
+                <section className="bg-silver mt-2 mb-2 pt-5">
+                    <Grid className="py-5">
                         <Row>
                             <Col sm={4}>
                                 <Image src={fr} responsive/>
@@ -131,8 +133,16 @@ class App extends Component {
                     </Grid>
                 </section>
 
-                <section>
-                    <Grid ref={process => this.process = process}>
+                <section className="bg-slate-gray mt-2 mb-5">
+                    <Grid className="pt-5">
+                        <Row>
+                            <Col smOffset={2} sm={8}><a href="http://nickyfxmakeup.ca"><Image src={bb} responsive/></a></Col>
+                        </Row>
+                    </Grid>
+                </section>
+
+                <section className="my-5" ref={process => this.process = process}>
+                    <Grid>
                         <Row>
                             <Col sm={12}>
                                 <h2>My Process</h2>
@@ -179,18 +189,15 @@ class App extends Component {
                     </Grid>
                 </section>
 
-                <section className="mb-5" ref={about => this.about = about}>
-                    <Grid className="pb-5">
-                        <Row>
-                            <Col sm={12}>
-                                <h2>About Me</h2>
-                            </Col>
-                        </Row>
+                <section className="bg-dark-slate-gray text-light mt-5" ref={about => this.about = about}>
+                    <Grid className="py-5">
                         <Row>
                             <Col sm={3}>
-                                <Image src={sarah} responsive/>
+                                <Image src={sarah} responsive circle style={{paddingTop:"60px"}}/>
                             </Col>
                             <Col sm={9}>
+                                <h2>About Me</h2>
+
                                 <p>
                                     I am an insatiable coffee drinker and travel lover who has fallen in love with the
                                     process of coming up with ideas. Writing, developing, and creating are my life while
@@ -209,7 +216,7 @@ class App extends Component {
                                     Let’s grab a coffee and discuss how I can help bring your brand’s voice to life!
                                 </p>
 
-                                <ul className="list-inline my-5">
+                                <ul className="list-inline links">
                                     <li><a href={LINKEDIN}><Icon name='linkedin-square' size='lg'/></a></li>
                                     <li><a href={"mailto:" + EMAIL}>{EMAIL}</a></li>
                                 </ul>

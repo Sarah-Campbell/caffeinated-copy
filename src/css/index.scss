@@ -5,7 +5,33 @@ body {
   margin-top: 50px;
 }
 
+.text-light {
+  color: $text-light;
+}
+
+.bg-steel-blue {
+  background-color: $steel-blue;
+}
+
+.bg-light-steel-blue {
+  background-color: $light-steel-blue;
+}
+
+.bg-silver {
+  background-color: $silver;
+}
+
+.bg-dark-slate-gray {
+  background-color: $dark-slate-gray;
+}
+
+.bg-slate-gray {
+  background-color: $slate-gray;
+}
+
 .navbar {
+  margin-bottom: 0;
+
   .navbar-brand:focus {
     outline: 0;
   }
@@ -26,7 +52,8 @@ body {
   }
 }
 
-.container {
+.container,
+.position-relative {
   position: relative;
 }
 
@@ -45,4 +72,17 @@ body {
 
 div[class*="col-"] {
   margin-bottom: 2em;
+}
+
+.links {
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  a {
+    color: $text-light;
+  }
+
+  a:hover {
+    color: $text-muted;
+  }
 }
