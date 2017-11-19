@@ -3,7 +3,6 @@ import {Button, Col, Grid, Image, Nav, Navbar, NavItem, Row} from 'react-bootstr
 import Icon from "react-fontawesome";
 import scrollToComponent from 'react-scroll-to-component';
 
-import facial from "./img/facial.jpg"
 import kindle from "./img/kindle.jpg"
 import kotex from "./img/kotex.jpg"
 import mec from "./img/mec.jpg"
@@ -27,46 +26,40 @@ class App extends Component {
                                 Caffeinated Copy
                             </Button>
                         </Navbar.Brand>
-                        <Navbar.Toggle/>
                     </Navbar.Header>
-                    <Navbar.Collapse>
-                        <Nav>
-                            <NavItem href="#" onClick={() => scrollToComponent(this.work, {align: 'top', offset: -30})}>
-                                My Work
-                            </NavItem>
-                            <NavItem href="#"
-                                     onClick={() => scrollToComponent(this.process, {align: 'top', offset: -30})}>
-                                My Process
-                            </NavItem>
-                            <NavItem href="#" onClick={() => scrollToComponent(this.about, {align: 'top', offset: -30})}>
-                                About Me
-                            </NavItem>
-                            <NavItem className="visible-xs" href={"mailto:" + EMAIL}>
-                                Let’s grab a coffee
-                            </NavItem>
-                        </Nav>
-                        <div className="pull-right hidden-xs">
-                            <a className="btn btn-sm btn-dark" href={"mailto:" + EMAIL}>Let’s grab a coffee</a>
-                        </div>
-                    </Navbar.Collapse>
+                    <Nav className="visible-md visible-lg">
+                        <NavItem href="#" onClick={() => scrollToComponent(this.work)}>
+                            My Work
+                        </NavItem>
+                        <NavItem href="#"
+                                 onClick={() => scrollToComponent(this.process, {align: 'top', offset: -30})}>
+                            My Process
+                        </NavItem>
+                        <NavItem href="#"
+                                 onClick={() => scrollToComponent(this.about, {align: 'top', offset: -30})}>
+                            About Me
+                        </NavItem>
+                    </Nav>
+                    <div className="pull-right visible-sm visible-md visible-lg">
+                        <a className="btn btn-sm btn-dark" href={"mailto:" + EMAIL}>Let’s grab a coffee</a>
+                    </div>
                 </Navbar>
 
-                <section className="vh-100" ref={top => this.top = top}>
-                    <div className="bg-wall">
-                        <Grid className="d-flex flex-column">
-                            <Image src={facial} responsive/>
-                            <Row className="align-self-end">
-                                <Col className="text-center" smOffset={1} sm={10}>
-                                    <h2>My Thoughts on Writing</h2>
-                                    <p className="lead">
-                                        I believe in Caffeinating Copy. Creating inspired and energized writing through
-                                        research, authenticity, and a splash of creativity.
-                                    </p>
-                                    <a className="btn btn-lg btn-dark" href={"mailto:" + EMAIL}>Let’s grab a coffee</a>
-                                </Col>
-                            </Row>
-                        </Grid>
-                    </div>
+                <section className="nudge-up" ref={top => this.top = top}>
+                    <Grid className="backdrop" fluid={true}/>
+                    <Grid className="d-flex flex-column justify-content-end vh-100">
+                        <Row className="no-gutters bg-facial" style={{flex: 1}}/>
+                        <Row className="text-center nudge-down">
+                            <Col smOffset={1} sm={10}>
+                                <h2>My Thoughts on Writing</h2>
+                                <p className="lead">
+                                    I believe in Caffeinating Copy. Creating inspired and energized writing through
+                                    research, authenticity, and a splash of creativity.
+                                </p>
+                                <a className="btn btn-lg btn-dark" href={"mailto:" + EMAIL}>Let’s grab a coffee</a>
+                            </Col>
+                        </Row>
+                    </Grid>
                 </section>
 
                 <section className="bg-examples" ref={work => this.work = work}>
@@ -93,7 +86,7 @@ class App extends Component {
                     </Grid>
                 </section>
 
-{/*
+                {/*
                 <section className="bg-slate-gray mt-2 mb-5">
                     <Grid className="pt-5">
                         <Row>
@@ -101,7 +94,7 @@ class App extends Component {
                         </Row>
                     </Grid>
                 </section>
-*/}
+                */}
 
                 <section className="my-5" ref={process => this.process = process}>
                     <Grid>
@@ -182,7 +175,8 @@ class App extends Component {
 
                             </Col>
                             <Col smOffset={4} sm={4}>
-                                <Image src={sarah} responsive circle style={{marginTop:"-150px", paddingTop:"150px"}}/>
+                                <Image src={sarah} responsive circle
+                                       style={{marginTop: "-150px", paddingTop: "150px"}}/>
                             </Col>
                         </Row>
                     </Grid>

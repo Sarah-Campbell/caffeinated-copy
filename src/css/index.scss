@@ -2,30 +2,7 @@
 
 body {
   font-weight: 300;
-}
-
-.text-light {
-  color: $text-light;
-}
-
-.bg-steel-blue {
-  background-color: $steel-blue;
-}
-
-.bg-light-steel-blue {
-  background-color: $light-steel-blue;
-}
-
-.bg-silver {
-  background-color: $silver;
-}
-
-.bg-dark-slate-gray {
-  background-color: $dark-slate-gray;
-}
-
-.bg-slate-gray {
-  background-color: $slate-gray;
+  margin-top: $navbar-height;
 }
 
 .vh-40 {
@@ -59,8 +36,15 @@ body {
   }
 }
 
-.container,
-.position-relative {
+.nudge-up {
+  margin-bottom: -$navbar-height;
+}
+
+.nudge-down {
+  margin-bottom: $navbar-height;
+}
+
+.container {
   position: relative;
 }
 
@@ -75,9 +59,28 @@ body {
   }
 }
 
-.bg-wall {
-  background: url(../img/wall.jpg) no-repeat top center;
-  background-size: contain;
+.text-light {
+  color: $text-light;
+}
+
+.bg-steel-blue {
+  background-color: $steel-blue;
+}
+
+.bg-light-steel-blue {
+  background-color: $light-steel-blue;
+}
+
+.bg-silver {
+  background-color: $silver;
+}
+
+.bg-dark-slate-gray {
+  background-color: $dark-slate-gray;
+}
+
+.bg-slate-gray {
+  background-color: $slate-gray;
 }
 
 .bg-facial {
@@ -106,3 +109,30 @@ div[class*="col-"] {
   }
 }
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.backdrop {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  height: 55vh;
+  background: url(../img/wall.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .backdrop {
+    display: block;
+  }
+}
