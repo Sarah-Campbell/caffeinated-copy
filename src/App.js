@@ -4,21 +4,14 @@ import Icon from "react-fontawesome";
 import scrollToComponent from 'react-scroll-to-component';
 
 import facial from "./img/facial.jpg"
-import ks from "./img/k/ks.png"
-import k1 from "./img/k/1.png"
-import k2 from "./img/k/2.png"
-import k3 from "./img/k/3.png"
-import k4 from "./img/k/4.png"
-import k5 from "./img/k/5.png"
-import fr from "./img/f/fr.png"
-import f1 from "./img/f/1.png"
-import f2 from "./img/f/2.png"
 import kindle from "./img/kindle.jpg"
 import kotex from "./img/kotex.jpg"
 import mec from "./img/mec.jpg"
 import tic from "./img/tic-tacs.jpg"
-import sarah from "./img/coffee-drinker.jpg"
-import bb from "./img/bb.jpg"
+import sarah from "./img/sarah.png"
+import k from "./img/k.png"
+import f from "./img/f.png"
+import n from "./img/n.png"
 
 const LINKEDIN = 'https://ca.linkedin.com/in/sarah-campbell-b9895081';
 const EMAIL = 'sarahj.campb@gmail.com';
@@ -45,7 +38,7 @@ class App extends Component {
                                      onClick={() => scrollToComponent(this.process, {align: 'top', offset: -30})}>
                                 My Process
                             </NavItem>
-                            <NavItem href="#" onClick={() => scrollToComponent(this.about)}>
+                            <NavItem href="#" onClick={() => scrollToComponent(this.about, {align: 'top', offset: -30})}>
                                 About Me
                             </NavItem>
                             <NavItem className="visible-xs" href={"mailto:" + EMAIL}>
@@ -58,30 +51,28 @@ class App extends Component {
                     </Navbar.Collapse>
                 </Navbar>
 
-                <section className="splash-container" ref={top => this.top = top}>
-                    <Grid>
-                        <Image src={facial} responsive/>
-                    </Grid>
+                <section className="vh-100" ref={top => this.top = top}>
+                    <div className="bg-wall">
+                        <Grid className="d-flex flex-column">
+                            <Image src={facial} responsive/>
+                            <Row className="align-self-end">
+                                <Col className="text-center" smOffset={1} sm={10}>
+                                    <h2>My Thoughts on Writing</h2>
+                                    <p className="lead">
+                                        I believe in Caffeinating Copy. Creating inspired and energized writing through
+                                        research, authenticity, and a splash of creativity.
+                                    </p>
+                                    <a className="btn btn-lg btn-dark" href={"mailto:" + EMAIL}>Let’s grab a coffee</a>
+                                </Col>
+                            </Row>
+                        </Grid>
+                    </div>
                 </section>
 
-                <section className="my-5">
-                    <Grid>
-                        <Row>
-                            <Col sm={12}>
-                                <h2>My Thoughts on Writing</h2>
-                                <p className="lead">
-                                    I believe in Caffeinating Copy. Creating inspired and energized writing through
-                                    research, authenticity, and a splash of creativity.
-                                </p>
-                            </Col>
-                        </Row>
-                    </Grid>
-                </section>
-
-                <section className="bg-light-steel-blue mt-5 mb-2" ref={work => this.work = work}>
-                    <Grid className="py-5">
-                        <Row>
-                            <Col sm={12}>
+                <section className="bg-examples" ref={work => this.work = work}>
+                    <Grid className="d-flex vh-100">
+                        <Row className="align-items-center align-self-center bg-dark-slate-gray text-light p-5">
+                            <Col className="text-center" smOffset={1} sm={10}>
                                 <h2>My Work</h2>
                                 <p>
                                     I understand the importance and hard work that goes into creating an authentic
@@ -89,50 +80,20 @@ class App extends Component {
                                     maintaining their online voice.
                                 </p>
                             </Col>
-                        </Row>
-
-                        <Row>
                             <Col sm={4}>
-                                <Image src={ks} responsive/>
+                                <Image src={k} responsive thumbnail/>
                             </Col>
                             <Col sm={4}>
-                                <Image src={k1} responsive/>
+                                <Image src={f} responsive thumbnail/>
                             </Col>
                             <Col sm={4}>
-                                <Image src={k2} responsive/>
-                            </Col>
-                        </Row>
-
-                        <Row>
-                            <Col sm={4}>
-                                <Image src={k3} responsive/>
-                            </Col>
-                            <Col sm={4}>
-                                <Image src={k4} responsive/>
-                            </Col>
-                            <Col sm={4}>
-                                <Image src={k5} responsive/>
+                                <Image src={n} responsive thumbnail/>
                             </Col>
                         </Row>
                     </Grid>
                 </section>
 
-                <section className="bg-silver mt-2 mb-2 pt-5">
-                    <Grid className="py-5">
-                        <Row>
-                            <Col sm={4}>
-                                <Image src={fr} responsive/>
-                            </Col>
-                            <Col sm={4}>
-                                <Image src={f1} responsive/>
-                            </Col>
-                            <Col sm={4}>
-                                <Image src={f2} responsive/>
-                            </Col>
-                        </Row>
-                    </Grid>
-                </section>
-
+{/*
                 <section className="bg-slate-gray mt-2 mb-5">
                     <Grid className="pt-5">
                         <Row>
@@ -140,11 +101,12 @@ class App extends Component {
                         </Row>
                     </Grid>
                 </section>
+*/}
 
                 <section className="my-5" ref={process => this.process = process}>
                     <Grid>
                         <Row>
-                            <Col sm={12}>
+                            <Col className="text-center" sm={12}>
                                 <h2>My Process</h2>
                                 <p>
                                     Practice makes perfect! (And the perfect conversation starter.) I know how important
@@ -191,11 +153,8 @@ class App extends Component {
 
                 <section className="bg-dark-slate-gray text-light mt-5" ref={about => this.about = about}>
                     <Grid className="py-5">
-                        <Row>
-                            <Col sm={3}>
-                                <Image src={sarah} responsive circle style={{paddingTop:"60px"}}/>
-                            </Col>
-                            <Col sm={9}>
+                        <Row className="text-center">
+                            <Col smOffset={1} sm={10}>
                                 <h2>About Me</h2>
 
                                 <p>
@@ -220,6 +179,10 @@ class App extends Component {
                                     <li><a href={LINKEDIN}><Icon name='linkedin-square' size='lg'/></a></li>
                                     <li><a href={"mailto:" + EMAIL}>{EMAIL}</a></li>
                                 </ul>
+
+                            </Col>
+                            <Col smOffset={4} sm={4}>
+                                <Image src={sarah} responsive/>
                             </Col>
                         </Row>
                     </Grid>

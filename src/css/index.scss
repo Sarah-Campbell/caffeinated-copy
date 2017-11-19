@@ -29,6 +29,14 @@ body {
   background-color: $slate-gray;
 }
 
+.vh-40 {
+  min-height: 40vh;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
 .navbar {
   margin-bottom: 0;
 
@@ -57,17 +65,30 @@ body {
   position: relative;
 }
 
-.splash-container {
-  background: url(../img/wall.jpg) no-repeat center center;
-  background-size: cover;
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 
-  .splash {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: flex-start;
-    min-height: 60vh;
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
   }
+}
+
+.bg-wall {
+  background: url(../img/wall.jpg) no-repeat top center;
+  background-size: contain;
+}
+
+.bg-facial {
+  background: url(../img/facial.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.bg-examples {
+  background: url(../img/examples.jpg) no-repeat center center;
+  background-size: cover;
 }
 
 div[class*="col-"] {
@@ -86,3 +107,4 @@ div[class*="col-"] {
     color: $text-muted;
   }
 }
+
