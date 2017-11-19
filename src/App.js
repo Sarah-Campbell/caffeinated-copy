@@ -8,7 +8,7 @@ import kindle from "./img/kindle.jpg"
 import kotex from "./img/kotex.jpg"
 import mec from "./img/mec.jpg"
 import tic from "./img/tic-tacs.jpg"
-import sarah from "./img/sarah.png"
+import sarah from "./img/coffee-drinker.jpg"
 import k from "./img/k.png"
 import f from "./img/f.png"
 import n from "./img/n.png"
@@ -182,7 +182,7 @@ class App extends Component {
 
                             </Col>
                             <Col smOffset={4} sm={4}>
-                                <Image src={sarah} responsive/>
+                                <Image src={sarah} responsive circle style={{marginTop:"-150px", paddingTop:"150px"}}/>
                             </Col>
                         </Row>
                     </Grid>
