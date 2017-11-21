@@ -147,7 +147,7 @@ class App extends Component {
                 <section className="bg-dark-slate-gray text-light mt-5" ref={about => this.about = about}>
                     <Grid className="py-5">
                         <Row className="text-center">
-                            <Col smOffset={1} sm={10}>
+                            <Col smOffset={1} sm={10} style={{zIndex: "1"}}>
                                 <h2>About Me</h2>
 
                                 <p>
