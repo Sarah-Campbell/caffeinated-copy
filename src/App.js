@@ -64,7 +64,7 @@ class App extends Component {
 
                 <section className="bg-examples" ref={work => this.work = work}>
                     <Grid className="d-flex vh-100">
-                        <Row className="align-self-center bg-silver text-light mx-0 p-5">
+                        <Row className="align-self-center bg-dark-slate-gray text-light mx-0 p-5">
                             <Col className="text-center" smOffset={1} sm={10}>
                                 <h2>My Work</h2>
                                 <p>
