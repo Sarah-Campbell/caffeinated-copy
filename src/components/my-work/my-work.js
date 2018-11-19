@@ -11,6 +11,9 @@ import mmuuullttiipplly from "../../img/mmuuullttiipplly.jpg";
 import park from "../../img/spring-break.jpg";
 import cabaret from "../../img/cabaret.jpg";
 import community from "../../img/community-spaces.jpg";
+import f from "../../img/f.png";
+import k from "../../img/k.png";
+import n from "../../img/n.png";
 
 const GRAMMABLE_BISTRO = "https://dissolve.com/showreels/grammable";
 const VERTICAL_READY =
@@ -81,7 +84,7 @@ const MyWork = () => {
             </Col>
           </Row>
 
-          <Row>
+          <Row style={{marginBottom: "2rem"}}>
             <Col sm={4}>
               <a href={GRAMMABLE_BISTRO}>
                 <img
@@ -91,10 +94,6 @@ const MyWork = () => {
                 />
               </a>
               <h6>The Grammable Bistro - Inedible Food, Stunning Pictures.</h6>
-              <p>
-                Condimentum in integer natoque sapien suspendisse dignissim
-                viverra a integer consectetur adipiscing posuere id consectetur.
-              </p>
             </Col>
             <Col sm={4}>
               <a href={VERTICAL_READY}>
@@ -105,10 +104,6 @@ const MyWork = () => {
                 />
               </a>
               <h6>Get Vertical Ready with Dissolve</h6>
-              <p>
-                Condimentum in integer natoque sapien suspendisse dignissim
-                viverra a integer consectetur adipiscing posuere id consectetur.
-              </p>
             </Col>
             <Col sm={4}>
               <a href={MMUUULLTTIIPPLLY}>
@@ -119,9 +114,15 @@ const MyWork = () => {
                 />
               </a>
               <h6>Achieving the MMUUULLTTIIPPLLY effect</h6>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={8}>
               <p>
-                Condimentum in integer natoque sapien suspendisse dignissim
-                viverra a integer consectetur adipiscing posuere id consectetur.
+                Wrote engaging, brand friendly, content and scripts for digital
+                and print ads, media outreach, and social media, increasing
+                brand awareness, click through, and sales.
               </p>
             </Col>
           </Row>
@@ -136,7 +137,7 @@ const MyWork = () => {
             </Col>
           </Row>
 
-          <Row>
+          <Row style={{marginBottom: "2rem"}}>
             <Col sm={4}>
               <a href={QUEENS_PARK}>
                 <img
@@ -146,10 +147,6 @@ const MyWork = () => {
                 />
               </a>
               <h6>Spring Break For the Whole Family;</h6>
-              <p>
-                Condimentum in integer natoque sapien suspendisse dignissim
-                viverra a integer consectetur adipiscing posuere id consectetur.
-              </p>
             </Col>
             <Col sm={4}>
               <a href={CABARET}>
@@ -160,10 +157,6 @@ const MyWork = () => {
                 />
               </a>
               <h6>Cabaret & Tasty Cocktails;</h6>
-              <p>
-                Condimentum in integer natoque sapien suspendisse dignissim
-                viverra a integer consectetur adipiscing posuere id consectetur.
-              </p>
             </Col>
             <Col sm={4}>
               <a href={COMMUNITY}>
@@ -174,9 +167,52 @@ const MyWork = () => {
                 />
               </a>
               <h6>Art & Community Spaces at the Craft Cafe</h6>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={8}>
               <p>
-                Condimentum in integer natoque sapien suspendisse dignissim
-                viverra a integer consectetur adipiscing posuere id consectetur.
+                Developed content strategy and content to increase traction and
+                engagement online. Entirely rewriting their site copy, and
+                growing their social following (15% increase) to promote New
+                West and attract visitors.{" "}
+              </p>
+            </Col>
+          </Row>
+        </Grid>
+      </section>
+
+      <section>
+        <Grid className={styles.grid} fluid>
+          <Row style={{marginTop: "2rem", marginBottom: "1rem"}}>
+            <Col sm={12}>
+              <h5>NOISE DIGITAL</h5>
+            </Col>
+          </Row>
+
+          <Row style={{marginBottom: "2rem"}}>
+            <Col sm={3}>
+              <img className={styles.img} src={k} alt="Kinder Surprise" />
+              <h6>Kinder Surprise</h6>
+            </Col>
+            <Col sm={3}>
+              <img className={styles.img} src={f} alt="Ferrero Rocher" />
+              <h6>Ferrero Rocher</h6>
+            </Col>
+            <Col sm={3}>
+              <img className={styles.img} src={n} alt="Nutella" />
+              <h6>Nutella</h6>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={8}>
+              <p>
+                Wrote thoughtful digital content to support the strategic
+                marketing plans of several large international brands, including
+                Kinder Surprise (and their national ‘Surprise Them Back’
+                campaign), Nutella, and Ferrero Rocher.
               </p>
             </Col>
           </Row>
