@@ -26,13 +26,13 @@ const AboutMe = () => {
             variety of brands, and with various agencies on market strategy and
             media planning.
           </p>
-
           <a href={"mailto:" + EMAIL}>{EMAIL}</a>
         </main>
         <aside>
-          Let’s grab a coffee and discuss how I can help bring your brand’s
-          voice to life!
+          Let’s <span>grab a coffee</span> and discuss how I can help bring your
+          brand’s voice to life!
         </aside>
+        <a href={"mailto:" + EMAIL}>{EMAIL}</a>
       </div>
     </Element>
   );

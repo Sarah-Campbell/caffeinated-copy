@@ -4,12 +4,10 @@
   "private": true,
   "homepage": "https://Sarah-Campbell.github.io",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.17",
-    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "classnames": "^2.2.6",
-    "normalize.css": "^8.0.1",
-    "prettier": "^1.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-flexbox-grid": "^2.1.2",
@@ -18,7 +16,8 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "react-scripts": "^3.0.0"
+    "prettier": "^1.17.0",
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

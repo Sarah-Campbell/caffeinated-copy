@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.inverse {
+  background-color: #111111;
+}
+
+.grid {
+  padding: 2rem;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.copy {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+}

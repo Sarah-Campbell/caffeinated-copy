@@ -1,0 +1,80 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.splash {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+}
+
+.splash a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.splash a:nth-child(1) {
+  background: url(../../img/scott-webb-437688-unsplash.jpg) 35%;
+  background-size: cover;
+}
+
+.splash a:nth-child(2) {
+  background: url(../../img/lost-places-1510592_1920.jpg) center;
+  background-size: cover;
+}
+
+.splash a:nth-child(3) {
+  padding: 4rem 2rem 1rem 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.splash a:nth-child(3) h2 {
+  margin-bottom: 2rem;
+  text-shadow: none;
+  color: inherit;
+}
+
+.splash a:nth-child(3) p {
+  padding: 0 3.5rem;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+}
+
+.splash a:nth-child(3) div {
+  margin-top: auto;
+}
+
+.splash a:nth-child(4) {
+  background: url(../../img/justin-chavanelle-548101-unsplash.jpg) center;
+  background-size: cover;
+}
+
+.splash a:hover {
+  cursor: pointer;
+}
+
+.splash a:hover:not(:nth-child(3)) {
+  background-color: rgba(30, 170, 242, 0.31);
+  background-blend-mode: multiply;
+}
+
+.splash a:nth-child(3):hover div {
+  color: #555;
+}
+
+.splash h2 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1em;
+}
