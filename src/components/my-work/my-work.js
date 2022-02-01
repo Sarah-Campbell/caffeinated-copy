@@ -2,6 +2,8 @@ import React, {Fragment} from "react";
 import classNames from "classnames";
 import {Col, Grid, Row} from "react-flexbox-grid";
 import {Element} from "react-scroll";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faQuoteLeft} from "@fortawesome/free-solid-svg-icons";
 import styles from "./my-work.module.css";
 
 import bistro from "../../img/grammable_bistro_showreel.jpg";
@@ -68,11 +70,29 @@ const MyWork = () => {
           <Row style={{marginTop: "4rem", marginBottom: "4rem"}}>
             <Col sm={8}>
               <div className={styles.copy}>
+                <div style={{fontSize: "4rem", marginBottom: "1rem"}}>
+                  <FontAwesomeIcon icon={faQuoteLeft} />
+                </div>
                 <p>
-                  I understand the importance and hard work that goes into
-                  creating an authentic brand. Check out a few of the brands
-                  below which have trusted me with developing and maintaining
-                  their online voice.
+                  Hey, three fuzzy images and a yelp review! Someone quick, hand
+                  me my credit card.” Said no one, ever. If it was that easy to
+                  gain followers and influence people, everyone would be Kylie
+                  J.
+                </p>
+                <p>
+                  But it’s not, and you’re not. So who are you? And what do you
+                  want?
+                </p>
+                <ul>
+                  <li>You want attention.</li>
+                  <li>You want prestige, innovation, impact.</li>
+                  <li>But most of all, you want leads that convert.</li>
+                </ul>
+                <p>
+                  I’m here to help. Your one-stop shop for content marketing and
+                  brand strategy. I’ve worked with many brands over the years,
+                  here’s just a few who’ve trusted me to energize their online
+                  presence.
                 </p>
               </div>
             </Col>
