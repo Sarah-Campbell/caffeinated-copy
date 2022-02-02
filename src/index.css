@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:500|Playfair+Display|Source+Sans+Pro:300");
+@import-normalize; /* bring in normalize.css styles */
 
 html {
   font-size: 16px;
