@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd8ee6d0.css",
-    "main.js": "/static/js/main.bdd72395.js",
+    "main.css": "/static/css/main.051ab8da.css",
+    "main.js": "/static/js/main.11df5f6f.js",
     "static/media/scott-webb-437688-unsplash.jpg": "/static/media/scott-webb-437688-unsplash.8e3f26312e25558f98bd.jpg",
     "static/media/examples.jpg": "/static/media/examples.4108246a99d8f7d34ee6.jpg",
     "static/media/lost-places-1510592_1920.jpg": "/static/media/lost-places-1510592_1920.40bd89c0b915d930c773.jpg",
@@ -22,11 +22,11 @@
     "static/media/community-spaces.jpg": "/static/media/community-spaces.3172593487df137ed563.jpg",
     "static/media/get-vertical-ready.jpg": "/static/media/get-vertical-ready.5b3e8f02ed891ac9d8e2.jpg",
     "index.html": "/index.html",
-    "main.fd8ee6d0.css.map": "/static/css/main.fd8ee6d0.css.map",
-    "main.bdd72395.js.map": "/static/js/main.bdd72395.js.map"
+    "main.051ab8da.css.map": "/static/css/main.051ab8da.css.map",
+    "main.11df5f6f.js.map": "/static/js/main.11df5f6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd8ee6d0.css",
-    "static/js/main.bdd72395.js"
+    "static/css/main.051ab8da.css",
+    "static/js/main.11df5f6f.js"
   ]
 }
