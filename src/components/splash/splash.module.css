@@ -12,9 +12,7 @@
     height: 100vh;
     padding-left: 2rem;
     padding-right: 2rem;
-    /*background: url(../../img/jon-tyson-unsplash.jpg) 0 0 / cover var(--bg-color-blend);*/
-    /*background-blend-mode: multiply;*/
-    background: url(../../img/jon-tyson-heads.jpg);
+    background: url(../../img/intricate-explorer.jpg);
     background-size: cover;
 }
 
