@@ -1,80 +1,103 @@
 .container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 3fr;
+    grid-template-areas:
+    ".      .      menu ."
+    "header header menu ."
+    "body   body   menu ."
+    "pitch  .      menu ."
+    ".      .      menu .";
+    width: 100vw;
+    height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /*background: url(../../img/jon-tyson-unsplash.jpg) 0 0 / cover var(--bg-color-blend);*/
+    /*background-blend-mode: multiply;*/
+    background: url(../../img/jon-tyson-heads.jpg);
+    background-size: cover;
 }
 
-.splash {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  bottom: 2rem;
-  left: 2rem;
-  display: flex;
+.header {
+    grid-area: header;
+    margin-bottom: 2rem;
 }
 
-.splash a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex: 1;
+.body {
+    grid-area: body;
+    margin-left: 4rem;
 }
 
-.splash a:nth-child(1) {
-  background: url(../../img/scott-webb-437688-unsplash.jpg) 35%;
-  background-size: cover;
+.pitch {
+    grid-area: pitch;
+    margin-left: 8rem;
 }
 
-.splash a:nth-child(2) {
-  background: url(../../img/lost-places-1510592_1920.jpg) center;
-  background-size: cover;
+.menu {
+    grid-area: menu;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: var(--primary-bg-color-dark);
+    color: var(--primary-color-light);
+    justify-items: center;
+    text-align: center;
+    row-gap: 5vh;
 }
 
-.splash a:nth-child(3) {
-  padding: 4rem 2rem 1rem 2rem;
-  flex-direction: column;
-  justify-content: flex-start;
+.body,
+.pitch {
+    font-size: 1.563em;
+    margin-bottom: 1rem;
 }
 
-.splash a:nth-child(3) h2 {
-  margin-bottom: 2rem;
-  text-shadow: none;
-  color: inherit;
+.header h1,
+.pitch h4,
+.body p,
+.pitch p {
+    display: inline-block;
+    background-color: var(--primary-bg-color-dark);
+    color: var(--primary-color-light);
+    padding: 1rem;
 }
 
-.splash a:nth-child(3) p {
-  padding: 0 3.5rem;
-  font-size: 2.5rem;
-  line-height: 2.75rem;
+.header h1:not(:nth-of-type(1)),
+.body p:not(:nth-of-type(1)),
+.pitch p {
+    margin-top: -1rem;
 }
 
-.splash a:nth-child(3) div {
-  margin-top: auto;
+.body p:nth-of-type(3) {
+    margin-bottom: 2rem;
 }
 
-.splash a:nth-child(4) {
-  background: url(../../img/justin-chavanelle-548101-unsplash.jpg) center;
-  background-size: cover;
+.menu h1 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    align-self: end;
 }
 
-.splash a:hover {
-  cursor: pointer;
+.menu div {
+    position: relative;
 }
 
-.splash a:hover:not(:nth-child(3)) {
-  background-color: rgba(30, 170, 242, 0.31);
-  background-blend-mode: multiply;
+.hand {
+    position: absolute;
+    left: -16em;
+    top: -6em;
+    transform: rotate(35deg) scale(.5);
 }
 
-.splash a:nth-child(3):hover div {
-  color: #555;
+.link {
+    display: block;
+    transition: 0.2s;
 }
 
-.splash h2 {
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1em;
+.link:hover {
+    cursor: pointer;
+    transform: translateX(4px);
+}
+
+.asterisk {
+    margin-right: 1rem;
 }
