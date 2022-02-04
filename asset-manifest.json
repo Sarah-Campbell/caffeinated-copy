@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.051ab8da.css",
-    "main.js": "/static/js/main.11df5f6f.js",
-    "static/media/scott-webb-437688-unsplash.jpg": "/static/media/scott-webb-437688-unsplash.8e3f26312e25558f98bd.jpg",
+    "main.css": "/static/css/main.856f0d34.css",
+    "main.js": "/static/js/main.202c8ccf.js",
+    "static/media/intricate-explorer.jpg": "/static/media/intricate-explorer.6a1602381e317d7d6dad.jpg",
     "static/media/examples.jpg": "/static/media/examples.4108246a99d8f7d34ee6.jpg",
-    "static/media/lost-places-1510592_1920.jpg": "/static/media/lost-places-1510592_1920.40bd89c0b915d930c773.jpg",
-    "static/media/justin-chavanelle-548101-unsplash.jpg": "/static/media/justin-chavanelle-548101-unsplash.871e3c9c6cef684a5445.jpg",
     "static/media/f.png": "/static/media/f.16a51d4a2e5be3bd9c05.png",
     "static/media/k.png": "/static/media/k.54f23580f7c4ad4edf78.png",
     "static/media/spring-break.jpg": "/static/media/spring-break.50146190a942d0667851.jpg",
@@ -19,14 +17,15 @@
     "static/media/tic-tacs.jpg": "/static/media/tic-tacs.522b05feb2da8f188020.jpg",
     "static/media/cabaret.jpg": "/static/media/cabaret.6ace2eb1c690b3c60353.jpg",
     "static/media/grammable_bistro_showreel.jpg": "/static/media/grammable_bistro_showreel.02ee1494bd1c9c8be70d.jpg",
+    "static/media/pointing-hand.png": "/static/media/pointing-hand.a672abb7cb4de264ffd7.png",
     "static/media/community-spaces.jpg": "/static/media/community-spaces.3172593487df137ed563.jpg",
     "static/media/get-vertical-ready.jpg": "/static/media/get-vertical-ready.5b3e8f02ed891ac9d8e2.jpg",
     "index.html": "/index.html",
-    "main.051ab8da.css.map": "/static/css/main.051ab8da.css.map",
-    "main.11df5f6f.js.map": "/static/js/main.11df5f6f.js.map"
+    "main.856f0d34.css.map": "/static/css/main.856f0d34.css.map",
+    "main.202c8ccf.js.map": "/static/js/main.202c8ccf.js.map"
   },
   "entrypoints": [
-    "static/css/main.051ab8da.css",
-    "static/js/main.11df5f6f.js"
+    "static/css/main.856f0d34.css",
+    "static/js/main.202c8ccf.js"
   ]
 }
