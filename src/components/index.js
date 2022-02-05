@@ -1,4 +1,5 @@
-export {default as Splash} from "./splash/splash";
-export {default as MyWork} from "./my-work/my-work";
-export {default as MyProcess} from "./my-process/my-process";
+export * from "./splash";
+export * from "./working-with-me";
+export * from "./portfolio";
+export * from "./fresh-ideas";
 export {default as AboutMe} from "./about-me/about-me";

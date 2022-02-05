@@ -1,0 +1,54 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr 3fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    ". apples  .       .       "
+    ". bananas .       .       "
+    ". lemons  oranges .";
+    column-gap: 2vw;
+    row-gap: 2vh;
+    margin: 8rem 4rem 4rem 4rem;
+}
+
+.apples {
+    grid-area: apples;
+}
+
+.bananas {
+    grid-area: bananas;
+}
+
+.lemons {
+    grid-area: lemons;
+}
+
+.oranges {
+    grid-area: oranges;
+}
+
+
+.bananas,
+.lemons,
+.oranges {
+    font-size: 1.953em;
+    line-height: 2.25rem;
+}
+
+.copy p {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.quote {
+    position: absolute;
+    top: -5.5rem;
+    left: -3rem;
+    opacity: .25;
+    font-size: 4em;
+}

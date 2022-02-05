@@ -16,8 +16,9 @@
   grid-area: main;
 }
 
-.grid aside {
-  grid-area: aside;
+.grid p,
+.grid ul {
+  margin-bottom: 1rem;
 }
 
 .grid > a {
@@ -34,15 +35,6 @@
   shape-outside: circle();
   border-radius: 50%;
   margin: 1em 0 2rem;
-}
-
-.grid aside {
-  font-family: "Playfair+Display", serif;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 1.15;
-  color: #555555;
-  margin: 2rem 1rem;
 }
 
 .grid span {
@@ -66,12 +58,6 @@
 --breakpoint-xl: 1200px;
 */
 
-@media (min-width: 480px) {
-  .grid aside {
-    margin: 2rem 6rem;
-  }
-}
-
 @media (min-width: 768px) {
   .grid {
     padding: 0 2rem;
@@ -79,13 +65,11 @@
     text-align: unset;
 
     display: grid;
-    grid-template-rows: auto 60px auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
       "h1"
       "."
-      "main"
-      "aside"
-      "a";
+      "main";
   }
 
   .grid p:first-of-type {
@@ -95,11 +79,6 @@
   .grid img {
     float: right;
     margin: 0.2em;
-  }
-
-  .grid aside {
-    width: 60%;
-    margin: 0;
   }
 }
 
@@ -111,12 +90,12 @@
     margin-left: auto;
     padding: 0;
     grid-column-gap: 2vw;
-    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-columns: 1fr 8fr 3fr;
     grid-template-rows: 100px auto auto;
     grid-template-areas:
-      ". . . ."
-      "h1 main . ."
-      "h1 main aside .";
+      ". . ."
+      "h1 main ."
+      "h1 main .";
   }
 
   .grid h1 {
@@ -136,20 +115,7 @@
     margin-top: 0;
   }
 
-  .grid aside {
-    transform: rotate(7deg);
-    width: auto;
-    margin: 0;
-    font-size: 1.75rem;
-    line-height: 1;
-    color: #777;
-  }
-
   .grid main a {
     display: inline;
-  }
-
-  .grid > a {
-    display: none;
   }
 }

@@ -1,9 +1,8 @@
-import React from "react";
 import {Element} from "react-scroll";
 import styles from "./about-me.module.css";
-import sarah from "../../img/coffee-drinker.jpg";
+import sarah from "./img/coffee-drinker.jpg";
 
-const EMAIL = "sarah@caffeinatedcopy.ca";
+const EMAIL = "sarahj.campb@gmail.com";
 
 const AboutMe = () => {
   return (
@@ -13,26 +12,28 @@ const AboutMe = () => {
         <main>
           <img src={sarah} alt="Me" />
           <p>
-            I am an insatiable coffee drinker and travel lover who has fallen in
-            love with the process of coming up with ideas. Writing, developing,
-            and creating are my life while extreme organization is just my fun
-            quirk.
+            An ultra-caffeinated innovative brand leader. I energize copy and
+            invigorate strategies. I’m in love with the process of new ideas and
+            inspiring teams to drive growth from concept to commerce.
           </p>
-
           <p>
-            I have 3 years of marketing and content development experience.
-            Since graduating with my Communications and English degree from
-            Simon Fraser University I have worked as a freelance copywriter on a
-            variety of brands, and with various agencies on market strategy and
-            media planning.
+            I get fired up growing followings and creating marketing strategies
+            for start-ups and B2B brands. Something I’ve done successfully for
+            the last 7 years at more than 20 companies including:
+          </p>
+          <ul>
+            <li>Summit Labels</li>
+            <li>Dissolve</li>
+            <li>Tourism New West</li>
+            <li>Arts Council of New West</li>
+            <li>Simon Fraser University</li>
+            <li>And more</li>
+          </ul>
+          <p>
+            Ready to take your brand to the next level? Let’s talk. Hit me up at
           </p>
           <a href={"mailto:" + EMAIL}>{EMAIL}</a>
         </main>
-        <aside>
-          Let’s <span>grab a coffee</span> and discuss how I can help bring your
-          brand’s voice to life!
-        </aside>
-        <a href={"mailto:" + EMAIL}>{EMAIL}</a>
       </div>
     </Element>
   );

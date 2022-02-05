@@ -1,12 +1,6 @@
 .container {
   position: relative;
   width: 100vw;
-  height: 100vh;
-}
-
-.splash {
-  background: url(../../img/examples.jpg) 35%;
-  background-size: cover;
 }
 
 .inverse {
