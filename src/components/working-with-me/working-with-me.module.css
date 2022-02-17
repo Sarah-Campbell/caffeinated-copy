@@ -1,54 +1,96 @@
 
 .container {
     display: grid;
-    grid-template-columns: 2fr 4fr 3fr 3fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-    ". apples  .       .       "
-    ". bananas .       .       "
-    ". lemons  oranges .";
-    column-gap: 2vw;
+    grid-template-columns: 6fr 1fr 4fr 3fr 3fr 4fr 1fr 6fr;
+    grid-template-rows: auto auto auto auto;
     row-gap: 2vh;
-    margin: 8rem 4rem 4rem 4rem;
+    margin: 6rem 2rem;
 }
 
-.apples {
-    grid-area: apples;
+img {
+    width: 100%;
+    height: auto
 }
 
-.bananas {
-    grid-area: bananas;
+.sarah {
+    grid-row: 1;
+    grid-column: 1/6;
+    margin-bottom: 2em;
 }
 
-.lemons {
-    grid-area: lemons;
-}
-
-.oranges {
-    grid-area: oranges;
-}
-
-
-.bananas,
-.lemons,
-.oranges {
-    font-size: 1.953em;
-    line-height: 2.25rem;
-}
-
-.copy p {
-    margin-bottom: 1rem;
-}
-
-h2 {
+.aside {
     position: relative;
-    margin-bottom: 2rem;
+    grid-row: 1;
+    grid-column: 6/9;
+    margin: 0 4em;
+    font-size: 1.563em;
+}
+
+.aside > :nth-child(1) {
+    margin-bottom: 1em;
+}
+
+.aside > :nth-child(2) {
+    display: inline-block;
+    text-align: right;
+    font-size: .6em;
+    line-height: 1.25;
 }
 
 .quote {
     position: absolute;
-    top: -5.5rem;
+    top: -3.5rem;
     left: -3rem;
     opacity: .25;
     font-size: 4em;
+    color: #0F4234;
+}
+
+.heading {
+    grid-row: 2;
+}
+
+.main {
+    grid-row: 3;
+    grid-column: 1/4;
+    font-size: 1.563em;
+}
+
+.main > :nth-child(1),
+.main > :nth-child(2) {
+    margin-bottom: 1em;
+}
+
+.offering {
+    grid-row: 3;
+    grid-column: 4/9;
+    margin: 0 4em;
+}
+
+.offering > :nth-child(1) {
+    margin-bottom: 2vh;
+}
+
+.offering > :nth-child(2),
+.offering > :nth-child(3) {
+    font-size: 1.563em;
+}
+
+.offering > :nth-child(2) {
+    margin-bottom: 1em;
+}
+
+.offering > :nth-child(3) a {
+    color: var(--link-color)
+}
+
+@media (min-width: 135em) {
+    .body {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .container {
+        grid-column: 1;
+    }
 }

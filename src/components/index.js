@@ -1,5 +1,5 @@
 export * from "./splash";
-export * from "./working-with-me";
+export * from "./introduction";
 export * from "./portfolio";
 export * from "./fresh-ideas";
-export {default as AboutMe} from "./about-me/about-me";
+export * from "./working-with-me";

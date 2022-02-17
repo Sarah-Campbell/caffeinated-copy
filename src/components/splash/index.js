@@ -17,10 +17,10 @@ export function Splash() {
       <div className={styles.panel}>
         <h1>caffeinatedcopy.ca</h1>
         <nav className={styles.menu}>
-          <MenuItem to="working-with-me">Why</MenuItem>
+          <MenuItem to="introduction">Why</MenuItem>
           <MenuItem to="portfolio">Portfolio</MenuItem>
           <MenuItem to="fresh-ideas">Fresh Ideas</MenuItem>
-          <MenuItem to="about-me">Working with Me</MenuItem>
+          <MenuItem to="working-with-me">Working with Me</MenuItem>
         </nav>
       </div>
     </section>

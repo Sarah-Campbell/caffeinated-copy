@@ -32,6 +32,10 @@ a:hover {
   color: inherit;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 h1,
 h2,
 h3,

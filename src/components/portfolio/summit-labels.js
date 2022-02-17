@@ -1,5 +1,3 @@
-import React from "react";
-import {Element} from "react-scroll";
 import {Col, Grid, Row} from "react-flexbox-grid";
 import styles from "./portfolio.module.css";
 
@@ -16,7 +14,6 @@ import {Image} from "./image";
 export function SummitLabels() {
   return (
     <>
-      <Element name="portfolio" />
       <section className={styles.container}>
         <Grid className={styles.grid} fluid>
           <Row style={{marginBottom: "2rem"}}>

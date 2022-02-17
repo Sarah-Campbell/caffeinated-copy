@@ -1,9 +1,8 @@
 import {
-  AboutMe,
-  FreshIdeas,
-  Portfolio,
   Splash,
-  // Working,
+  Introduction,
+  Portfolio,
+  FreshIdeas,
   WorkingWithMe,
 } from "./components";
 
@@ -11,11 +10,10 @@ export function App() {
   return (
     <>
       <Splash />
-      <WorkingWithMe />
-      {/*<Working />*/}
+      <Introduction />
       <Portfolio />
       <FreshIdeas />
-      <AboutMe />
+      <WorkingWithMe />
     </>
   );
 }

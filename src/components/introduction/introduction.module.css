@@ -1,0 +1,46 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr 3fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    ". jungle   .       ."
+    ". gorilla  .       ."
+    ". bananas  oranges .";
+    column-gap: 2vw;
+    row-gap: 2vh;
+    margin: 8rem 4rem 4rem 4rem;
+}
+
+.jungle {
+    grid-area: jungle;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.gorilla {
+    grid-area: gorilla;
+}
+
+.bananas {
+    grid-area: bananas;
+}
+
+.oranges {
+    grid-area: oranges;
+}
+
+.gorilla,
+.bananas,
+.oranges {
+    font-size: 1.953em;
+    line-height: 2.25rem;
+}
+
+.quote {
+    position: absolute;
+    top: -5.5rem;
+    left: -3rem;
+    opacity: .25;
+    font-size: 4em;
+}
