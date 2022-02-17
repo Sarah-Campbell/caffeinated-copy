@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.44153f8b.css",
-    "main.js": "/static/js/main.a85d7099.js",
+    "main.css": "/static/css/main.afddbb21.css",
+    "main.js": "/static/js/main.26b46fda.js",
     "static/media/intricate-explorer.jpg": "/static/media/intricate-explorer.6a1602381e317d7d6dad.jpg",
+    "static/media/sarah.jpg": "/static/media/sarah.8664f6e9b1858cf13736.jpg",
     "static/media/f.png": "/static/media/f.16a51d4a2e5be3bd9c05.png",
     "static/media/k.png": "/static/media/k.54f23580f7c4ad4edf78.png",
     "static/media/spring-break.jpg": "/static/media/spring-break.50146190a942d0667851.jpg",
-    "static/media/coffee-drinker.jpg": "/static/media/coffee-drinker.0527a48a83518c1b4874.jpg",
     "static/media/mec.jpg": "/static/media/mec.a6f279ff0694b7ef4355.jpg",
     "static/media/kindle.jpg": "/static/media/kindle.5eb218aa389eebde078a.jpg",
     "static/media/step-by-step.jpg": "/static/media/step-by-step.af7f5590fe1a001e4e73.jpg",
@@ -26,11 +26,11 @@
     "static/media/donate.jpg": "/static/media/donate.ba12dd36f01769cd4c06.jpg",
     "static/media/for-the-love-of-beer.jpg": "/static/media/for-the-love-of-beer.4bf996a8ac8957968d74.jpg",
     "index.html": "/index.html",
-    "main.44153f8b.css.map": "/static/css/main.44153f8b.css.map",
-    "main.a85d7099.js.map": "/static/js/main.a85d7099.js.map"
+    "main.afddbb21.css.map": "/static/css/main.afddbb21.css.map",
+    "main.26b46fda.js.map": "/static/js/main.26b46fda.js.map"
   },
   "entrypoints": [
-    "static/css/main.44153f8b.css",
-    "static/js/main.a85d7099.js"
+    "static/css/main.afddbb21.css",
+    "static/js/main.26b46fda.js"
   ]
 }
